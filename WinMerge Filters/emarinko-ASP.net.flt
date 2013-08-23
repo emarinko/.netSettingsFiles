@@ -1,0 +1,28 @@
+## This is a directory/file filter for WinMerge 
+## This filter lets through only files ASP.NET developers care about 
+name: emarinko's ASP.NET Filters 
+desc: Include everything but the noise
+
+## Include by default
+def: include
+
+## Filters for filenames begin with f: 
+## Filters for directories begin with d: 
+## (Inline comments begin with " ##" and extend to the end of the line) 
+
+f: \.dll$
+f: \.pdb$
+f: \.bak$
+f: \.suo$
+f: \.csproj\.user$
+f: ^UpgradeLog\.htm$
+f: ^UpgradeLog\.XML$
+f: \.Publish\.xml$
+
+d: \.svn$
+d: bin$
+d: obj$
+d: \_UpgradeReport\_Files$
+d: Backup$
+d: packages$
+d: PublishProfiles$
